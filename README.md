@@ -1,69 +1,31 @@
-Motion Detection Alarm System
-A Python-based security application that uses a webcam to detect motion. When motion is detected while in "Black Screen Mode," the system triggers an audible alarm.
+# 🕵️ Motion Detection Alarm System 🔔  
 
-Description
-This script captures video from your computer's webcam and analyzes consecutive frames to identify movement. In its standard mode, it visually highlights motion by drawing green rectangles around moving objects.
+A real-time **motion detection alarm system** built with **Python, OpenCV, NumPy, and Pygame**.  
+This project turns your webcam into a simple security system that can:  
 
-For a more practical security application, you can toggle "Black Screen Mode." In this mode, the video feed is blacked out, but the script continues to detect motion in the background. If movement is detected, it outlines the motion in white and triggers a loud, continuous alarm sound.
+- Detect motion in front of the camera.  
+- Trigger a loud alarm when motion is detected while in **black screen mode** (surveillance mode).  
+- Let you monitor in **normal mode** with live video feed and motion bounding boxes.  
 
-Features
-Real-time Motion Detection: Captures and processes the webcam feed live.
+It’s a lightweight yet powerful project that demonstrates **computer vision, frame differencing, and multimedia handling in Python**.  
+You can use it as a **security system prototype**, a **motion detection learning project**, or a **fun personal experiment**.  
 
-Visual Feedback: Draws rectangles around detected objects in the standard view.
+---
 
-Black Screen (Alarm) Mode: A discreet mode that blacks out the screen and sounds an alarm when motion is detected.
+## 🚀 Features  
 
-Simple Keyboard Controls: Easily toggle modes or quit the application.
+- ✅ **Real-time motion detection** using frame differencing.  
+- ✅ **Alarm system** that plays continuously until motion stops.  
+- ✅ **Black screen mode** for hidden surveillance with white contours showing only motion areas.  
+- ✅ **Normal mode** for monitoring with green bounding boxes.  
+- ✅ Simple keyboard controls (`t` and `q`) for ease of use.  
+- ✅ Built entirely with **open-source Python libraries**.  
 
-Customizable Alarm: You can use any MP3 file as the alarm sound.
+---
 
-Requirements
-To run this script, you will need Python 3 and the following libraries:
+## 🛠️ Requirements  
 
-opencv-python
+Make sure you have Python 3.x installed, then install dependencies:  
 
-numpy
-
-pygame
-
-You can create a requirements.txt file with the following content:
-
-opencv-python
-numpy
-pygame
-
-Installation
-Clone the repository or download the script.
-
-Install the required libraries:
-Open your terminal or command prompt and run:
-
-pip install -r requirements.txt
-
-Or install them manually:
-
-pip install opencv-python numpy pygame
-
-Add an alarm sound:
-
-Find an MP3 audio file you want to use as an alarm.
-
-Save it in the same directory as the Python script.
-
-Rename the file to alarm.mp3 or update the alarm_sound variable in the script to your file's name.
-
-Usage
-Make sure your webcam is connected and uncovered.
-
-Run the script from your terminal:
-
-python motion_detector.py
-
-(Assuming you've named the file motion_detector.py)
-
-A window will appear showing your webcam feed.
-
-Keyboard Controls
-t Key: Press t to toggle between the standard visual mode and the "Black Screen" alarm mode.
-
-q Key: Press q while the video window is active to stop the script and close the application.
+```bash
+pip install opencv-python pygame numpy
