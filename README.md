@@ -10,6 +10,8 @@ This project turns your webcam into a simple security system that can:
 It’s a lightweight yet powerful project that demonstrates **computer vision, frame differencing, and multimedia handling in Python**.  
 You can use it as a **security system prototype**, a **motion detection learning project**, or a **fun personal experiment**.  
 
+<img width="793" height="624" alt="Screenshot 2025-08-29 144002" src="https://github.com/user-attachments/assets/d5efa0f8-8db8-49e3-a771-eaf781efee33" />
+
 ---
 
 ## 🚀 Features  
